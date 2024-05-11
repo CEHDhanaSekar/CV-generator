@@ -1,9 +1,8 @@
-Certainly! Below is a basic README file for your "CV generator" project:
-
-```markdown
 # Tech CV generator
 
-Tech CV generator is a web-based project built using React.js with Vite, CSS, Bootstrap CSS, and Firebase for Google authentication. It allows users to create technology-based resumes using a simple and intuitive interface.
+Tech CV generator is a web-based project built using
+React.js with Vite, CSS, Bootstrap CSS, and Firebase for Google authentication. 
+It allows users to create technology-based resumes using a simple and intuitive interface.
 
 ## Features
 - **Google Authentication**: Users can sign in using their Google account for secure authentication.
