@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bai+Jamjuree:wght@600&family=Barlow+Semi+Condensed:wght@300&family=Inspiration&family=Poppins:wght@300;400;800&family=Raleway:wght@300;700&family=Rubik:wght@600&family=Ubuntu:wght@700&display=swap');
+.app {
+  max-width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
+  padding: 35px 50px 10px 50px;
+  background-color: var(--backgroundColor);
+  font-size: 15px;
+  position: relative;
+}
+.appChild {
+  flex: 1;
+  font-family: var(--mainFont);
+}
+/* CV Side */
+.cvSide {
+  flex: 1.25 1 0;
+  box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 50px;
+  min-width: 595px;
+  aspect-ratio: 1/1.41;
+  background-color: white;
+  font-size: 12px;
+}
+/* Edit Side */
+.appChild {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+}
+.cvSide-div{
+  overflow: scroll;
+  margin-bottom: 200px;
+  max-width: 675px;
+}
+.download-resume-part{
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+}
+button {
+  cursor: pointer;
+}
+h2 {
+  color: var(--otherColor);
+  font-weight: 500;
+  font-size: 25px;
+}
+.edit-side {
+  display: flex;
+  flex-grow: 1 1.5 0;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 40%;
+  max-width: 600px;
+  height: fit-content;
+  background-color: var(--backgroundColor);
+  margin-bottom: 200px;
+}
+
+.sideBar {
+  flex-grow: 1;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  gap: 5px;
+}
+/* .sideBar-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: var(--backgroundColor);
+} */
+.form-fields {
+  background-color: transparent;
+  flex-grow: 999;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+
+/* PERSONAL INFO FORM  and underline transition*/
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 10px 20px 20px 20px;
+  border-radius: 8px;
+}
+.text-inputs {
+  border: none;
+  padding-left: 10px;
+  background: none;
+  height: 30px;
+  outline: none;
+}
+.item {
+  position: relative;
+}
+.item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: lightgray;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.entry-label {
+  font-weight: 500;
+}
+
+/* DROPDOWN FORMS */
+.tab {
+  height: 75px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.expand {
+  margin-left: auto;
+  transform: rotate(0);
+  transition: transform 0.3s ease-out;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Save and Cancel Buttons */
+.save-cancel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.save-cancel-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: rgb(245, 233, 233);
+}
+.save-btn {
+  color: #fff;
+  background-color: var(--otherColor);
+  transition: background-color 0.25s ease-out;
+}
+.save-btn:hover {
+  background-color: var(--primaryColor);
+}
+.cancel {
+  background-color: var(--backgroundColor);
+  transition: background-color 0.25s ease-out;
+}
+.cancel:hover {
+  background-color: lightgray;
+}
+main{
+  width: 100%;
+  overflow: hidden;
+  min-height: 90vh;
+}
+/* Just for nav-bar */
+#carousel-div{
+  margin-bottom: 100px;
+}
+#carousel-slider .carousel-item{
+ padding: 0px 30px;
+}
+#carousel-slider{
+  max-width: 400px;
+}
+.carousel-navigator{
+  width: 40px;
+  aspect-ratio: 1/1;
+  align-self: center;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.carousel-item{
+  background-color: #ffffff;
+}
+.card.text-white{
+  max-width: 300px;
+  padding: 5px;
+}
+.card-img{
+  width: 100%;
+}
+.card .card-img{
+  filter: brightness(.6);
+}
+/* For Profile Button */
+#user-profile-btn{
+  border-radius: 50%;
+  width: 50px;
+  padding: 5px;
+  background-color: #00d1d1;
+  border: none;
+}
+#user-profile-btn img{
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #464646;
+} 
+.navbar{
+  padding-right: 50px;
+}
+.navbar .navbar-brand{
+  font-size: 1.75rem;
+}
+.navbar .navbar-nav .nav-item{
+  position: relative;
+}
+.navbar .navbar-nav #user-profile-options{
+  position: absolute;
+  top: 110%;
+  right: 0px;
+  background-color: #fffefc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 99;
+  max-width: 225px;
+  box-shadow: 1px 1px 10px #555555;
+  transition: all .25s linear;
+  opacity: 0;
+}
+.navbar .navbar-nav #user-profile-options.show{
+  opacity: 1;
+}
+.navbar .navbar-nav #user-profile-options .profile-img-part{
+  width: 100px;
+}
+#profile-wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  top: 0px;
+  z-index: 88;
+  display: none;
+}
+#profile-wrapper.show{
+  display: block;
+}
+/* For button to crete resume */
+#create-button-div button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: .05em;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  transition-duration: 1s;
+  position: relative;
+  border: none;
+}
+#create-button-div button:hover{
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  letter-spacing: .1em;
+  background-color: rgb(255, 255, 255);;
+}
+#create-button-div button::before{
+  position: absolute;
+  inset: 2px;
+  content: '';
+  background-color: rgb(255, 255, 255);
+  z-index: 0;
+  transition: all .3s linear ;
+}
+#create-button-div button:hover::before{
+  background-color: #17181b;
+}
+#create-button-div button span{
+  position: relative; 
+  z-index: 1;
+}
+#create-button-div button i{
+  inset: 0px;
+  position: absolute;
+  display: block;
+}
+#create-button-div button i::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  width: 15px;
+  left: 75%;
+  border: 2px solid rgb(255, 255, 255);
+  transition-duration: 1s;
+}
+#create-button-div button:hover i::before{
+  width: 20px;
+  left: 20%;
+  border-color: #000000;
+}
+#create-button-div button i::after{
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  width: 15px;
+  left: 20%;
+  border: 2px solid rgb(255, 255, 255);
+  transition-duration: 1s;
+}
+#create-button-div button:hover i::after{
+  width: 20px;
+  left: 75%;
+  border-color: #000000;
+}
+.resume-add{
+  margin-top: 50px;
+}
+.add-img {
+  display: grid;
+  place-items: center;
+}
+.add-img .img-fluid{
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 1px 1px 10px #313131;
+}
+.resume-add .add-text{
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 2rem;
+  text-align: center;
+  font-family: 'Bai Jamjuree',sans-serif;
+}
+#GoogleAuth-container{
+  width: 100%;
+  min-height: 85vh;
+}
+#Google-Auth{
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#GoogleAuth-container .signIn-btn .button-icon{
+  width: 40px;
+  border-radius: 50%;
+}
+#GoogleAuth-container .signIn-btn .bs-icon{
+  font-size: 1.5rem;
+}
+#GoogleAuth-container .signIn-btn{
+  padding: 5px 25px;
+  margin: 10px 0px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: transparent;
+  transition: all .5s linear;
+}
+#GoogleAuth-container .signIn-btn:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+footer{
+  margin-top: 100px;
+  min-height: 100px;
+  font-family: 'Bai Jamjuree',sans-serif;
+  box-shadow: -1px -1px 10px #4f7f8b;
+  color: #ffffff;
+}
+footer i{
+  font-size: 1.5rem;
+  width: 40px;
+  transition: all .2s linear;
+}
+footer a.text-light:hover i{
+  color: #00d1d1;
+  font-size: 1.75rem;
+  transform: translateY(-10px);
+}
+.about-container{
+  font-size: 1rem;
+  padding: 20px 10px;
+}
+.about-container dt{
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.about-container dd{
+  text-indent: 20px;
+  text-align: justify;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #464646;
+}
+
+@media (min-width : 992px) {
+  #carousel-div{
+    order: 2;
+  }
+  #left-card{
+    order: 1;
+  }
+  #right-card{
+    order: 3;
+  }
+  #nav-bar{
+    margin-bottom: 10px;
+  }
+  #create-button-div{
+    padding: 10px 0px;
+  }
+  #resume-add-1{
+    order: 4;
+  }
+  #resume-add-2{
+    order: 5;
+  }
+  .resume-add .add-text{
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width : 992px) {
+  .app{
+    flex-direction: column;
+  }
+  .cvSide{
+    align-self: center;
+  }
+  .edit-side{
+    width: 100%;
+    padding: 0 5px;
+    align-self: center;
+  }
+  .tab{
+    font-size: 1rem;
+  }
+  .save-cancel-btn{
+    padding: 5px;
+    font-size: .8rem;
+  }
+  .navbar .navbar-brand{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width : 576px){
+  .navbar{
+    padding: 10px 5px;
+  }
+  .navbar .navbar-brand{
+    font-size: 1.25rem;
+  }
+  .app{
+    font-size: 11px;
+    padding: 35px 5px 10px 5px;
+  }
+  .tab{
+    font-size: .8rem;
+  }
+  .about-container{
+    font-size: .75rem;
+  }
+  .navbar .tr-logo{
+    width: 40px;
+  }
+  #user-profile-btn{
+    width: 40px;
+    height: 40px;
+    padding: 2.5px;
+  }
+  #user-profile-btn img{
+    width: 35px;
+    height: 35px;
+  }
+}

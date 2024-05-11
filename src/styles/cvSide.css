@@ -1,0 +1,168 @@
+.personal-info-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(225, 232, 255);
+  gap: 10px;
+  height: fit-content;
+  padding: 1.5rem 0 1rem 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* for Download Resume */
+.download-resume-part{
+  flex-wrap: wrap;
+}
+.download-resume-part button{
+  min-width: 200px;
+  border: none;
+  outline: none;
+  background: #1a1a1a;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #818181;
+  box-shadow: 1px 1px 10px #aaaaaa;
+  transition: all .25s linear;
+}
+.download-resume-part button:hover{
+  color: #1a1a1a;
+  background: #ffffff;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
+/* INFO COMPONENT */
+.info-container {
+  padding: 0 25px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-wrap: break-word;
+  gap: 10px;
+}
+.info-container .left-align{
+  max-width: 15vw;
+  overflow-wrap: break-word;
+}
+.info-container .right-align{
+  max-width: 30vw;
+  overflow-wrap: break-word;
+  padding: 0px 10px;
+}
+.header-container {
+  width: 100%;
+  background-color: var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container h4{
+  font-size: 1.25rem;
+}
+.grid-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  height: fit-content;
+  column-gap: 20px;
+}
+.grid-info2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  height: fit-content;
+  column-gap: 15px;
+}
+.grid-info-outer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.grid-info-list-items{
+  min-width: 100px;
+}
+.grid-info-list-items li{
+  margin: 0 75px 15px 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.grid-info-list-items2{
+  display: block;
+  padding: 0 5px;
+  width: 100%;
+}
+.grid-info-list-items2 p{ 
+  text-transform: capitalize; 
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 500;
+}
+.job-description {
+  margin-top: 2.5px;
+}
+.personal-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.detail-icon {
+  font-size: 20px;
+}
+.personal-info-holder h1{
+  font-size: 2rem;
+}
+.personal-info-holder h5{
+  font-size: 1.35rem;
+}
+
+@media (max-width : 992px) {
+  .info-container .left-align{
+    max-width: 25vw;
+  }
+  .info-container .right-align{
+    max-width: 48vw;
+  }
+  .info-container{
+    padding: 0 15px;
+  }
+  .personal-info-holder h1{
+    font-size: 1.75rem;
+  }
+  .personal-info-holder h5{
+    font-size: 1.25rem;
+  }
+}
+@media (max-width : 576px){
+  .info-container .left-align{
+    max-width: 30vw;
+  }
+  .header-container h4{
+    font-size: 1.15rem;
+  }
+  .info-container .right-align{
+    max-width: 60vw;
+  }
+  .info-container{
+    padding: 0 12px;
+  }
+  .personal-info-holder h1{
+    font-size: 1.5rem;
+  }
+  .personal-info-holder h5{
+    font-size: 1.1rem;
+  }
+}

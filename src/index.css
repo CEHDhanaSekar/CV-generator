@@ -1,0 +1,18 @@
+:root {
+  --mainFont: "Inter", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --primaryColor: #9f5afd;
+  --backgroundColor: #f4f3f3;
+  --otherColor: #5849db;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  /* font-family: var(--mainFont); */
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
